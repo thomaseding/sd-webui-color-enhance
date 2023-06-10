@@ -16,6 +16,8 @@ Left is the raw output (with a manually selected VAE!), right is with the enhanc
 
 ### Notes
 
+To use this directly in the txt2img and img2img tabs, go to Settings -> Postprocessing, and add this script to the `Enable postprocessing operations in txt2img and img2img tabs` option. Save and restart the web UI to apply the changes.
+
 This should not cause any issues with hires fix, inpainting, etc, as the postprocessing pipeline in the web UI only applies postprocessing scripts directly before returning the final image(s). There should also be no quality degradation from re-using the same image multiple times (as in inpainting), as operations are performed in floating point before being converted back to uint8. If you want to have peace of mind, you can always run this postprocessing script in the `Extras` tab as a last step.
 
 If you were to test this out with an image you believe is already heavily saturated/colorful, and apply this at full strength, you should see essentially 0 change to the image, an indication of how working in this color space removes the need to worry about oversaturating or blowing out an image.
