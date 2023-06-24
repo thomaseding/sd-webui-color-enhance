@@ -1,3 +1,5 @@
+(Forked from https://git.mmaker.moe/mmaker/sd-webui-color-enhance in order to host on GitHub.)
+
 # Color Enhance
 
 Script for [AUTOMATIC1111/stable-diffusion-webui](https://github.com/AUTOMATIC1111/stable-diffusion-webui) to enhance colors.
